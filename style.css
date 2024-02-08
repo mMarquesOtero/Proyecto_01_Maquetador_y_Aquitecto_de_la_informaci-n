@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans:wght@300&family=Open+Sans&family=Pacifico&family=Poppins:wght@200&display=swap');
+
+:root {
+  /* BRANDING COLORS */
+  --mmo-color-1: #b40b0b;
+  --mmo-color-2: #ee4b4b;
+  --mmo-color-3: #a72727;
+  --mmo-color-4: #e7e7e7;
+  --mmo-color-5: #ea4343;
+  --mmo-color-6: #f40000;
+  --mmo-color-7: #000000;
+  --mmo-color-8: #ffffff;
+  --mmo-color-9: #f1f1f1;
+
+  /* FONTS */
+  --mmo-primary-font: 'Noto Sans', sans-serif;
+
+  /* BACKGROUND COLORS */
+  --mmo-primary-bg: var(--mmo-color-9);
+  --mmo-secondary-bg: var(--mmo-color-8);
+  --mmo-tertiary-bg: var(--mmo-color-7);
+
+  /* TEXT COLORS */
+  --mmo-primary-text: var(--mmo-color-7);
+  --mmo-secondary-text: var(--mmo-color-8);
+
+  /* BORDER COLORS */
+
+  /* BORDER RADIUS */
+  --mmo-primary-br: 5px;
+  --mmo-primary-br: 10px;
+
+  /* SPACINGS */
+  --mmo-margin-xs: 10px;
+  --mmo-margin-s: 20px;
+  --mmo-margin-m: 30px;
+  --mmo-margin-l: 40px;
+  --mmo-margin-xl: 50px;
+
+  --mmo-padding-xs: 10px;
+  --mmo-padding-s: 20px;
+  --mmo-padding-m: 30px;
+  --mmo-padding-l: 40px;
+  --mmo-padding-xl: 50px;
+
+  --mmo-gap-xs: 10px;
+  --mmo-gap-s: 20px;
+  --mmo-gap-m: 30px;
+  --mmo-gap-l: 40px;
+  --mmo-gap-xl: 50px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--mmo-primary-font);
+}
+
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+p,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--mmo-primary-text);
+}
