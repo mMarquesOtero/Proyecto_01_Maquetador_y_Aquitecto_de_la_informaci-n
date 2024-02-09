@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Página web dedicada a la marca de bebida Coca-cola">
+    <meta name="keywords" content="Coca-cola, Fanta, Sprite, Aquarius, refresco, burbujas ">
+    <meta name="author" content="Marina Marqués">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#e7e7e7">
+    <meta property="og:title" content="Coca-Cola Company - La bebida que refresca al mundo entero">
+    <meta property="og:description" content="Página web dedicada a la marca de bebida Coca-cola y derivados.">
+    <!-- FALTA METER LA IMAGEN EN META ABAJO-->
+    <meta property="og:image" content="">
+    <link rel="“canonical”" href="http://127.0.0.1:5500/%E2%80%9Dhttps://www.coca-cola.es%E2%80%9D/">
+    <link rel="stylesheet" href="./Coca-Cola_files/style.css">
+    <link rel="shorcut icon" href="./Coca-Cola_files/Logo2_Coca-Cola.svg">
+    <title>Coca-Cola</title>
+  </head>
+  <body>
+    <!-- CONSTRUIMOS HEADER-->
+    <header id="header" class="flex-container">
+      <div class="flex-container">
+        <img src="./Coca-Cola_files/Logo2_Coca-Cola.svg" alt="Logo Coca-cola">
+      </div>
+      <nav>
+        <ul class="flex-container">
+          <li>
+            <a href="http://127.0.0.1:5500/index.html">Historia</a>
+          </li>
+          <li>
+            <a href="http://127.0.0.1:5500/index.html">Marcas</a>
+          </li>
+          <li>
+            <a href="http://127.0.0.1:5500/index.html">Impacto</a>
+          </li>
+          <li>
+            <a href="http://127.0.0.1:5500/index.html">Productos</a>
+          </li>
+          <li>
+            <a href="http://127.0.0.1:5500/index.html">Contact0</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main></main>
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>

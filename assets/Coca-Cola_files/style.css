@@ -87,7 +87,7 @@ h6 {
 
 #header {
   padding: var(--mmo-padding-m);
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -97,79 +97,4 @@ h6 {
 
 #header a {
   font-weight: 500;
-}
-
-#header > nav > ul > li:last-child > a {
-  color: #ee4b4b;
-}
-
-/* ESTILO HERO */
-#hero {
-  background-image: url(https://littlebuddhaagency.com/wp-content/uploads/branding-agency-blog-coca-cola-brand-architecture-uk-cans.jpg);
-  height: 75svh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  justify-content: start;
-  padding: var(--mmo-padding-xl);
-}
-#hero > h2 {
-  font-size: 50px;
-  color: var(--mmo-color-8);
-  width: 60%;
-  height: 60%;
-  padding: var(--mmo-padding-l);
-}
-
-.column {
-  flex-direction: column;
-}
-
-#hero > article > h3,
-#hero > article > p {
-  color: var(--mmo-color-7);
-  gap: 5px;
-}
-
-#hero > article > p {
-  font-size: 20px;
-  width: 80%;
-  text-align: center;
-}
-
-/* ESTILO SECTION MARCA*/
-#marca {
-  gap: 0px;
-  background-color: var(--mmo-color-4);
-  height: 80svh;
-}
-
-.planeta {
-  width: 50%;
-  box-shadow: 14px 20px -6px rgba(0, 0, 0, 0.75);
-  border-radius: var(--mmo-primary-br);
-}
-
-.planeta > img {
-  height: 40px;
-  width: 40px;
-}
-
-.planeta > h4 {
-  font-size: 20px;
-}
-
-.gente {
-  width: 50%;
-  box-shadow: 14px 20px -6px rgba(0, 0, 0, 0.75);
-  border-radius: var(--mmo-primary-br);
-}
-
-.gente > img {
-  height: 40px;
-  width: 40px;
-}
-
-.gente > h4 {
-  font-size: 20px;
 }

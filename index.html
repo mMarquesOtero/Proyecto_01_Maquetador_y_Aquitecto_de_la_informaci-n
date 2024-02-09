@@ -32,12 +32,12 @@
   </head>
   <body>
     <!-- CONSTRUIMOS HEADER-->
-    <header>
-      <div>
+    <header id="header" class="flex-container">
+      <div class="flex-container">
         <img src="./assets/Logo2_Coca-Cola.svg" alt="Logo Coca-cola" />
       </div>
       <nav>
-        <ul>
+        <ul class="flex-container">
           <li>
             <a href="">Historia</a>
           </li>
@@ -51,10 +51,46 @@
             <a href="">Productos</a>
           </li>
           <li>
-            <a href="">Contactan0s</a>
+            <a href=""><u>Contact0</u></a>
           </li>
         </ul>
       </nav>
     </header>
+    <main>
+      <section id="hero" class="flex-container">
+        <h2>La bebida que refresca al mundo entero</h2>
+        <article class="flex-container column">
+          <h3>Open Happiness</h3>
+          <p>Desde 1986 repartiendo felicidad</p>
+          <input type="button" value="Descubre más" />
+        </article>
+      </section>
+      <section id="marca" class="flex-container">
+        <div class="planeta flex-container">
+          <img src="./assets/Nubes.webp" alt="Foto cielo nubes" />
+          <h4>Nuestro planeta, las personas y las comunidades importan</h4>
+          <p>
+            Nuestro objetivo es crear un futuro compartido mejor y más
+            sostenible. Cambiar la vida de las personas, las comunidades y
+            nuestro planeta trabajando de la manera correcta. Al mejorar como
+            empresa, podemos ayudar a construir un futuro más fuerte y
+            sostenible para todos.
+          </p>
+          <input type="button" value="Objetivos" />
+        </div>
+        <div class="gente flex-container">
+          <img src="./assets/gente.webp" alt="Gente" />
+          <h4>Las personas importan</h4>
+          <p>
+            Creemos que un lugar de trabajo diverso, equitativo e inclusivo nos
+            hace más fuertes como empresa, nos permite crear un futuro
+            compartido mejor para los empleados y las comunidades, facilita el
+            acceso a la igualdad de oportunidades y fomenta el sentimiento de
+            pertenencia en nuestro lugares de trabajo y en la sociedad.
+          </p>
+          <input type="button" value="Más información" />
+        </div>
+      </section>
+    </main>
   </body>
 </html>
