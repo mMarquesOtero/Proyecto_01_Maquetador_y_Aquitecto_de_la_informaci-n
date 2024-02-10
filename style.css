@@ -29,7 +29,7 @@
 
   /* BORDER RADIUS */
   --mmo-primary-br: 5px;
-  --mmo-primary-br: 10px;
+  --mmo-secondary-br: 10px;
 
   /* SPACINGS */
   --mmo-margin-xs: 10px;
@@ -139,20 +139,48 @@ h6 {
 
 /* ESTILO SECTION MARCA*/
 #marca {
-  gap: 0px;
-  background-color: var(--mmo-color-4);
+  background-color: var(--mmo-color-9);
   height: 80svh;
+  padding: var(--mmo-padding-m);
+  position: absolute;
+}
+
+#comunidad {
+  background-color: var(--mmo-color-8);
+  border: 1px solid var(--mmo-color-8);
+  border-radius: var(--mmo-secondary-br);
+  padding: var(--mmo-padding-s);
+  gap: var(--mmo-gap-xs);
+  position: relative;
+  top: -30px;
+  left: 20px;
+}
+
+#comunidad > button {
+  color: var(--mmo-color-9);
+  background-color: #ffffff;
+}
+
+#trabajo {
+  background-color: var(--mmo-color-8);
+  border: 1px solid var(--mmo-color-8);
+  border-radius: var(--mmo-secondary-br);
+  padding: var(--mmo-padding-s);
+  gap: var(--mmo-gap-xs);
 }
 
 .planeta {
-  width: 50%;
-  box-shadow: 14px 20px -6px rgba(0, 0, 0, 0.75);
-  border-radius: var(--mmo-primary-br);
+  width: 20%;
+  /*box-shadow: 14px 20px -6px rgba(0, 0, 0, 0.75);*/
 }
 
 .planeta > img {
-  height: 40px;
-  width: 40px;
+  height: 450px;
+  width: 450px;
+  border-radius: var(--mmo-secondary-br);
+  position: relative;
+  top: -50px;
+  right: 100px;
 }
 
 .planeta > h4 {
@@ -160,14 +188,14 @@ h6 {
 }
 
 .gente {
-  width: 50%;
-  box-shadow: 14px 20px -6px rgba(0, 0, 0, 0.75);
-  border-radius: var(--mmo-primary-br);
+  width: 20%;
+  /*box-shadow: 14px 20px -6px rgba(0, 0, 0, 0.75);*/
 }
 
 .gente > img {
-  height: 40px;
-  width: 40px;
+  height: 500px;
+  width: 550px;
+  border-radius: var(--mmo-secondary-br);
 }
 
 .gente > h4 {
