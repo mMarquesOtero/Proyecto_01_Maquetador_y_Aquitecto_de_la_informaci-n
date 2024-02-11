@@ -201,3 +201,41 @@ h6 {
 .gente > h4 {
   font-size: 20px;
 }
+
+/* ESTILO SECTION MARCAS*/
+
+#marcas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 250px);
+  justify-content: center;
+  align-items: center;
+  background-color: var(--mmo-color-9);
+}
+
+#marcas > ul > li > img {
+  border-radius: var(--mmo-secondary-br);
+  height: 200px;
+}
+
+/* ESTILO FOOTER*/
+
+hr {
+  height: 1px;
+  background-color: var(--mmo-color-8);
+}
+
+.historia {
+  background-color: var(--mmo-color-7);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--mmo-gap-m);
+}
+
+.footer > h4 {
+  color: var(--mmo-color-4);
+}
+.footer > h4 > ul > li > a {
+  color: var(--mmo-color-8);
+}
