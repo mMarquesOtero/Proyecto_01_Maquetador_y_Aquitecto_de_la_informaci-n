@@ -12,6 +12,7 @@
   --mmo-color-7: #000000;
   --mmo-color-8: #ffffff;
   --mmo-color-9: #f1f1f1;
+  --mmo-color-10: #7f7f7f;
 
   /* FONTS */
   --mmo-primary-font: 'Noto Sans', sans-serif;
@@ -75,7 +76,6 @@ a {
 }
 
 p,
-a,
 h1,
 h2,
 h3,
@@ -97,6 +97,7 @@ h6 {
 
 #header a {
   font-weight: 500;
+  color: var(--mmo-primary-text);
 }
 
 #header > nav > ul > li:last-child > a {
@@ -121,6 +122,19 @@ h6 {
   padding: var(--mmo-padding-l);
 }
 
+#hero > article {
+  background-color: #a72727;
+  border-radius: var(--mmo-secondary-br);
+  gap: var(--mmo-gap-xs);
+  padding: var(--mmo-padding-m);
+  position: absolute;
+  top: 150px;
+  right: 100px;
+  width: 40%;
+  max-width: 400px;
+  min-width: 380px;
+}
+
 .column {
   flex-direction: column;
 }
@@ -133,8 +147,20 @@ h6 {
 
 #hero > article > p {
   font-size: 20px;
-  width: 80%;
+  width: 100%;
   text-align: center;
+}
+
+.mybutton {
+  background-color: var(--mmo-color-4);
+  padding: var(--mmo-padding-xs);
+  border: none;
+  border-radius: var(--mmo-primary-br);
+  cursor: pointer;
+}
+
+.mybutton:hover {
+  color: var(--mmo-color-2);
 }
 
 /* ESTILO SECTION MARCA*/
@@ -204,6 +230,17 @@ h6 {
 
 /* ESTILO SECTION MARCAS*/
 
+.branding {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.branding > ul > li > img {
+  height: 300px;
+  width: 300px;
+}
+
+/*
 #marcas {
   display: grid;
   grid-template-columns: repeat(auto-fit, 250px);
@@ -216,26 +253,69 @@ h6 {
   border-radius: var(--mmo-secondary-br);
   height: 200px;
 }
-
+*/
 /* ESTILO FOOTER*/
 
-hr {
-  height: 1px;
-  background-color: var(--mmo-color-8);
+footer {
+  background-color: var(--mmo-color-5);
 }
 
-.historia {
-  background-color: var(--mmo-color-7);
+.final {
+  padding: var(--mmo-padding-l);
+}
+
+.terminos {
   display: flex;
   justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: var(--mmo-gap-m);
 }
 
-.footer > h4 {
-  color: var(--mmo-color-4);
+.terminos > ul > li:first-child {
+  color: var(--mmo-color-1);
+  font-weight: 800;
 }
-.footer > h4 > ul > li > a {
+
+.terminos > ul > li {
   color: var(--mmo-color-8);
+}
+.socialmedia > ul {
+  display: flex;
+  justify-content: center;
+  padding: var(--mmo-padding-s);
+}
+
+.socialmedia > ul > li {
+  list-style: none;
+}
+.socialmedia > ul > li > a > img {
+  margin: var(--mmo-margin-s);
+  width: 30px;
+}
+
+.ubicacion {
+  display: flex;
+  justify-content: space-around;
+  padding: var(--mmo-padding-l);
+}
+
+.ubicacion > img {
+  width: 300px;
+}
+
+.cita {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--mmo-padding-s);
+}
+
+.cita > p {
+  color: var(--mmo-color-8);
+}
+
+.linea {
+  border-top: 1px solid var(--mmo-color-4);
+  height: 5px;
+  max-width: 1300pxx;
+  padding: 0;
+  margin: 50px auto 0 auto;
 }
