@@ -104,6 +104,13 @@ h6 {
   color: #ee4b4b;
 }
 
+.menu {
+  display: none;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+
 /* ESTILO HERO */
 #hero {
   background-image: url(https://littlebuddhaagency.com/wp-content/uploads/branding-agency-blog-coca-cola-brand-architecture-uk-cans.jpg);
@@ -285,6 +292,7 @@ h6 {
 
 .grid-item > img {
 }
+
 /* ESTILO FOOTER*/
 
 footer {
@@ -350,4 +358,28 @@ footer {
   max-width: 1300px;
   padding: 0;
   margin: 20px auto 0 auto;
+}
+
+@media screen and (max-width: 480px) {
+  #header {
+    height: 17svh;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .menu {
+    display: flex;
+  }
+  #header > nav {
+    display: none;
+  }
+  #hero > h2 {
+    font-size: 40px;
+  }
+  #hero > article > p {
+    font-size: 20px;
+  }
+  #hero > article {
+    min-width: 300px;
+  }
 }
